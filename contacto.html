@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto — ¿Hablamos? | SAFI Sistemas</title>
+  <meta name="description" content="Contacta con SAFI Sistemas: Polig. Ind. Los Llanos, Villanueva Mesía (Granada). Tel. +34 902 111 137 · safi@safi.es. Te respondemos en breve.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;800;900&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a href="productos.html">Productos</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="calidad.html">Calidad</a>
+        <a href="quienes-somos.html">Quiénes somos</a>
+      </nav>
+      <a class="logo" href="index.html"><img src="assets/img/logo-negro.png" alt="SAFI Sistemas"></a>
+      <a class="btn header-cta" href="contacto.html">Contacto <span class="arrow">→</span></a>
+      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- ============ MENÚ MÓVIL ============ -->
+  <nav class="mobile-nav" aria-label="Navegación móvil">
+    <a href="index.html" style="--i:0">Inicio <span class="mn-num">01</span></a>
+    <a href="productos.html" style="--i:1">Productos <span class="mn-num">02</span></a>
+    <a href="servicios.html" style="--i:2">Servicios <span class="mn-num">03</span></a>
+    <a href="calidad.html" style="--i:3">Calidad <span class="mn-num">04</span></a>
+    <a href="quienes-somos.html" style="--i:4">Quiénes somos <span class="mn-num">05</span></a>
+    <a href="contacto.html" style="--i:5">Contacto <span class="mn-num">06</span></a>
+    <p class="mobile-nav-foot">Polig. Ind. Los Llanos, Villanueva Mesía (Granada) · +34 902 111 137</p>
+  </nav>
+
+  <main>
+
+    <!-- ============ HERO PÁGINA ============ -->
+    <section class="page-hero">
+      <div class="container">        <h1 class="display reveal" style="--d:.1s">¿<span class="serif-it" style="display:inline">Hablamos?</span></h1>
+        <div class="page-hero-foot reveal" style="--d:.2s">
+          <p>¿Necesitas asesoría técnica, un presupuesto o información sobre nuestra maquinaria? Escríbenos y te respondemos en breve.</p>
+          <a class="link-more" href="mailto:safi@safi.es"><span class="dot"></span> safi@safi.es</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACTO ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="split split--wide-right" style="align-items:start">
+
+          <!-- Datos de contacto -->
+          <div class="content">
+            <p class="eyebrow reveal">Datos de contacto</p>
+            <div class="contact-list mt-2 reveal" style="--d:.1s">
+              <div class="contact-row">
+                <span class="cr-label">Dirección</span>
+                <p class="cr-value">Polig. Ind. Los Llanos,<br>parc. 141–144<span class="cr-note">18369 Villanueva Mesía, Granada (España)</span></p>
+              </div>
+              <div class="contact-row">
+                <span class="cr-label">Horario</span>
+                <p class="cr-value">Lunes a viernes<span class="cr-note">8:00 – 14:00 · 16:00 – 18:30</span></p>
+              </div>
+              <div class="contact-row">
+                <span class="cr-label">Teléfono</span>
+                <p class="cr-value"><a href="tel:+34902111137">+34 902 111 137</a></p>
+              </div>
+              <div class="contact-row">
+                <span class="cr-label">Email</span>
+                <p class="cr-value"><a href="mailto:safi@safi.es">safi@safi.es</a><span class="cr-note">También puedes escribirnos directamente desde tu correo.</span></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Formulario -->
+          <div class="content">
+            <p class="eyebrow reveal">Formulario</p>
+            <form id="contact-form" class="form-grid mt-2 reveal" style="--d:.15s" novalidate>
+              <div class="field">
+                <label for="nombre">Nombre y apellidos *</label>
+                <input type="text" id="nombre" name="nombre" required autocomplete="name" placeholder="Tu nombre">
+              </div>
+              <div class="field">
+                <label for="empresa">Empresa / Almazara</label>
+                <input type="text" id="empresa" name="empresa" autocomplete="organization" placeholder="Nombre de tu empresa">
+              </div>
+              <div class="field">
+                <label for="email">Correo electrónico *</label>
+                <input type="email" id="email" name="email" required autocomplete="email" placeholder="nombre@empresa.com">
+              </div>
+              <div class="field">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" autocomplete="tel" placeholder="+34 600 000 000">
+              </div>
+              <div class="field full">
+                <label for="asunto">¿Qué necesitas?</label>
+                <select id="asunto" name="asunto">
+                  <option>Asesoría técnica</option>
+                  <option>Presupuesto de maquinaria</option>
+                  <option>Servicio post-venta</option>
+                  <option>Recambios</option>
+                  <option>Otra consulta</option>
+                </select>
+              </div>
+              <div class="field full">
+                <label for="mensaje">Mensaje *</label>
+                <textarea id="mensaje" name="mensaje" required placeholder="Cuéntanos cómo es tu explotación y qué te gustaría mejorar…"></textarea>
+              </div>
+              <div class="form-check full">
+                <input type="checkbox" id="privacidad" name="privacidad" required>
+                <label for="privacidad">He leído y acepto la política de privacidad.</label>
+              </div>
+              <div class="full">
+                <button type="submit" class="btn btn--accent">Enviar mensaje <span class="arrow">→</span></button>
+              </div>
+              <p class="form-success full" role="status">¡Mensaje enviado! Gracias por escribirnos — te responderemos en breve.</p>
+            </form>
+            <p class="mt-2 reveal" style="--d:.2s; font-size:.78rem; color:var(--ink-40)">
+              <strong>Responsable de tus datos:</strong> SAFI Sistemas S.L. · <strong>Finalidad:</strong> respuestas y correos electrónicos comerciales · <strong>Legitimación:</strong> tu consentimiento · <strong>Derechos:</strong> acceso, rectificación, limitación o supresión en safi@safi.es
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MAPA / CÓMO LLEGAR ============ -->
+    <section class="section section--paper2">
+      <div class="container">
+        <div class="section-label reveal"><span class="num">02</span> Dónde estamos</div>
+        <div class="split">
+          <div class="content">
+            <h2 class="display reveal" style="--d:.1s">Villanueva Mesía, <span class="serif-it">Granada</span></h2>
+            <p class="lead reveal" style="--d:.2s">En pleno Poniente Granadino, a 30 minutos de Granada capital y con acceso directo desde la A-92. Si vienes a vernos, te enseñamos nuestras instalaciones y la maquinaria en funcionamiento.</p>
+            <ul class="tick-list">
+              <li class="reveal" style="--d:.1s">Polígono Industrial Los Llanos, parcelas 141–144.</li>
+              <li class="reveal" style="--d:.2s">Acceso directo desde la autovía A-92 (Granada – Sevilla).</li>
+              <li class="reveal" style="--d:.3s">Coordenadas: 37.21°N, 4.01°W aprox.</li>
+            </ul>
+            <a class="btn reveal" style="--d:.35s" href="https://www.google.com/maps/search/?api=1&query=Pol%C3%ADgono+Industrial+Los+Llanos+Villanueva+Mes%C3%ADa+Granada" target="_blank" rel="noopener">Abrir en Google Maps <span class="arrow">→</span></a>
+          </div>
+          <figure class="reveal-img"><img src="assets/img/olivar.jpg" alt="Paisaje de olivares del Poniente Granadino, donde se ubican las instalaciones de SAFI"></figure>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <div class="footer-brand">
+        <a class="logo footer-logo" href="index.html"><img src="assets/img/logo-blanco.png" alt="SAFI Sistemas"></a>
+        <p>Especialistas en maquinaria para olivar, almazara y agricultura intensiva, con servicio de post-venta, formación y mantenimiento en todo el mundo.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Menú</h4>
+        <ul>
+          <li><a href="productos.html">Sistemas</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="calidad.html">Compromiso</a></li>
+          <li><a href="calidad.html#medioambiente">Medioambiental</a></li>
+          <li><a href="quienes-somos.html">Quiénes somos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Aviso legal</a></li>
+          <li><a href="#">Política de privacidad</a></li>
+          <li><a href="#">Condiciones de uso</a></li>
+          <li><a href="#">Política de calidad</a></li>
+          <li><a href="#">Cookies</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <address>
+          Polig. Ind. Los Llanos, parc. 141–144<br>
+          18369 Villanueva Mesía, Granada<br>
+          <a href="mailto:safi@safi.es">safi@safi.es</a><br>
+          <a href="tel:+34902111137">+34 902 111 137</a>
+        </address>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year>2026</span> SAFI Sistemas S.L.</span>
+      <span>witcreativo - granada</span>
+      <a href="contacto.html">¿Hablamos? →</a>
+    </div>
+  </footer>
+
+</body>
+</html>
